@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShinyBackgroundLoc.PermissonPage"
+             Shell.PresentationMode="Modal"
+             Title="PermissonPage">
+    <VerticalStackLayout VerticalOptions="Center" Spacing="10" Padding="20">
+        <Label 
+            Text="Location permition required!"
+            FontSize="24" FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label Margin="0,30"
+            Text="This app collects location data to enable [list of functions here] even when the app is closed or not in use."
+             />
+        <Button x:Name="GrantBtn" Clicked="GrantBtn_Clicked" Text="Click here to grant permission"/>
+        <Button x:Name="GoToMainPageBtn" IsEnabled="False" Clicked="GoToMainPageBtn_Clicked" Text="Let's go!" />
+    </VerticalStackLayout>
+</ContentPage>

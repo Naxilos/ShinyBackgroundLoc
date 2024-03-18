@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShinyBackgroundLoc.MainPage" Shell.NavBarIsVisible="False">
+
+        <VerticalStackLayout Spacing="20" VerticalOptions="Center"
+            Padding="30,0">
+          <Label Text="Location:" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <Grid ColumnDefinitions="*,*">
+                <Label x:Name="LatLabel" FontSize="18" Grid.Column="0" Text="???" HorizontalOptions="Center"/>
+                <Label x:Name="LonLabel" FontSize="18" Grid.Column="1" Text="???" HorizontalOptions="Center"/>
+
+            </Grid>
+
+            <Label Text="accuracy"  FontSize="16" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <Label x:Name="AccLabel" Text="?" FontSize="18" HorizontalOptions="Center"/>
+
+            <Button
+                x:Name="Btn"
+                Text="START" 
+                Clicked="OnBtnClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+
+</ContentPage>
+
